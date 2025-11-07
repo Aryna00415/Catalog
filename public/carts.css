@@ -1,0 +1,21 @@
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.quantity-controls button {
+  background-color: transparent;
+  border: 0.1px solid black;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.quantity-controls button:hover {
+  background: rgba(194, 149, 152, 0.58);
+}
+.quantity-input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1px solid black;
+  text-align: center;
+}/*# sourceMappingURL=carts.css.map */
