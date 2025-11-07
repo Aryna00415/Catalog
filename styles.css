@@ -27,7 +27,7 @@ button:hover {
   background-color: rgba(194, 149, 152, 0.58);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 430px) {
   wrapper {
     grid-template-columns: none;
   }
