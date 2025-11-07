@@ -1,5 +1,5 @@
-body {
-    header {
-        background-color: blue;
-    }
-}
+@import "./common.scss";
+@import "./catalog.scss";
+@import "./img.scss";
+@import "./carts.scss";
+@import "./basket.scss";
