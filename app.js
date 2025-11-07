@@ -10,23 +10,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const cartClear = document.querySelector('.cart-clear');
 
- 
+
 
     let cart = [];
-
- 
-
-    // Форматирование цены
 
     function formatPrice(cents) {
 
         return new Intl.NumberFormat('ru-RU', { style: 'currency', currency: 'BYN' }).format(cents / 1);
 
     }
-
- 
-
-    // Обновление количества в карточке
 
     function updateQuantity(card, delta) {
 
@@ -42,9 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
- 
-
-    // Обновление итога по карточке
 
     function updateCardTotal(card) {
 
@@ -58,9 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
- 
-
-    // Добавление в корзину
 
     function addToCart(card) {
 
@@ -72,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const quantity = parseInt(card.querySelector('.quantity-input').value);
 
- 
+
 
         const existingItem = cart.find(item => item.id === id);
 
@@ -86,19 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
- 
+
 
         updateCart();
 
         alert(`Товар добавлен. Итого по корзине: ${formatPrice(getCartTotal())}`);
 
- 
+
 
     }
 
- 
 
-    // Обновление корзины
 
     function updateCart() {
 
@@ -148,9 +132,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
- 
-
-    // Итоговая сумма корзины
 
     function getCartTotal() {
 
@@ -158,9 +139,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
- 
-
-    // Очистка корзины
 
     cartClear.addEventListener('click', () => {
 
@@ -170,9 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
- 
 
-    // Делегирование событий для кнопок в корзине
 
     cartItems.addEventListener('click', (e) => {
 
@@ -180,13 +156,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!cartItem) return;
 
- 
+
 
         const itemId = cartItem.dataset.id;
 
         const currentItem = cart.find(item => item.id === itemId);
 
- 
+
 
         if (e.target.classList.contains('quantity-minus')) {
 
@@ -210,9 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
- 
 
-    // Делегирование событий для изменения количества в корзине
 
     cartItems.addEventListener('change', (e) => {
 
@@ -237,30 +211,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 currentItem.quantity = value;
 
             }
-
-            // const cartItem = e.target.closest('.cart-item');
-
-            // const itemId = cartItem.dataset.id;
-
-            // const currentItem = cart.find(item => item.id === itemId);
-
- 
-
-            // let value = parseInt(e.target.value);
-
-            // value = Math.max(1, Math.min(999, value));
-
-            // currentItem.quantity = value;
-
             updateCart();
 
         }
 
     });
 
- 
-
-    // Обработчики событий для каталога
 
     catalog.addEventListener('click', (e) => {
 
@@ -268,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!card) return;
 
- 
+
 
         if (e.target.classList.contains('quantity-minus') || e.target.classList.contains('quantity-plus')) {
 
@@ -282,9 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     });
 
- 
 
-    // Обработчики для изменения количества в карточках каталога
+
 
     document.querySelectorAll('.card .quantity-input').forEach(input => {
 
