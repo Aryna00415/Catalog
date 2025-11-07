@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 29fr 6fr);
+    gap: 20px;
+    padding: 20px;
+}
+button {
+    background-color: transparent;
+    border: 0.1px solid black;
+  width: 48%;
+    height: 5%;
+    cursor: pointer;
+     &:hover {
+            background-color: rgba(194, 149, 152, 0.58)
+        }
+}
+@media screen and (max-width: 430px){
+   wrapper { grid-template-columns: none;}
+}
