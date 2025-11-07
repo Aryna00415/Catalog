@@ -1,201 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Витрина товаров</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
+
+<body>
     <h1>Каталог товаров</h1>
     <wrapper>
-            <!-- Карточка товара -->
-              
+        <!-- Карточка товара -->
+
         <section class="catalog" aria-label="Каталог товаров">
             <!-- Карточка 1 -->
             <article class="card" data-id="1" data-price="100">
                 <h3>Тонер-эссенция</h3>
                 <img class="cart1" src="./img/cart1.png" alt="Карточка1">
-                <p>Насыщенный увлажняющий тонер с текстурной эссенции возвращает сухой и чувствительной коже здоровый вид</p>
-                <p class="card-price">100.00 BYN</p>
+                <p>Насыщенный увлажняющий тонер возвращает сухой и чувствительной коже здоровый вид</p>
+                <p class="card-price">100,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">100.00 BYN</span></p>
+                <p>Итого: <span class="card-total">100,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
 
             <!-- Карточка 2 -->
             <article class="card" data-id="2" data-price="180">
                 <h3>Успокаивающая эссенция</h3>
-                 <img class="cart2" src="/img/cart2.png" alt="Карточка2">
+                <img class="cart2" src="./img/cart2.png" alt="Карточка2">
                 <p>Легкая эссенция быстро успокаивает и увлажняет кожу</p>
-                <p class="card-price">180.00 BYN</p>
+                <p class="card-price">180,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">180.00 BYN</span></p>
+                <p>Итого: <span class="card-total">180,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 3 -->
+            <!-- Карточка 3 -->
             <article class="card" data-id="3" data-price="50">
                 <h3>Сыворотка для лица</h3>
-                 <img class="cart3" src="/img/cart3.png" alt="Карточка3">
+                <img class="cart3" src="./img/cart3.png" alt="Карточка3">
                 <p>Сыворотка создана для борьбы с пигментными пятнами и неровным тоном кожи</p>
-                <p class="card-price">50.00 BYN</p>
+                <p class="card-price">50,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">50.00 BYN</span></p>
+                <p>Итого: <span class="card-total">50,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 4 -->
+            <!-- Карточка 4 -->
             <article class="card" data-id="4" data-price="75">
                 <h3>Ультроувлажняющий лосьон</h3>
-                  <img class="cart4" src="/img/cart4.png" alt="Карточк4">
-                <p>Обладает легкой флюидной текстурой, способствует восстановлению липидного барьера</p>
-                <p class="card-price">75.00 BYN</p>
+                <img class="cart4" src="./img/cart4.png" alt="Карточк4">
+                <p>Легка флюидная текстура, способствует восстановлению липидного барьера</p>
+                <p class="card-price">75,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">75.00 BYN</span></p>
+                <p>Итого: <span class="card-total">75,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 5 -->
+            <!-- Карточка 5 -->
             <article class="card" data-id="1" data-price="169">
                 <h3>Тоник для лица</h3>
-                <img class="cart5" src="/img/cart5.png" alt="Карточка5">
+                <img class="cart5" src="./img/cart5.png" alt="Карточка5">
                 <p>Активный корректирующий тоник эффективно очищает и освежает кожу</p>
-                <p class="card-price">169.00 BYN</p>
+                <p class="card-price">169,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">169.00 BYN</span></p>
+                <p>Итого: <span class="card-total">169,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 6 -->
+            <!-- Карточка 6 -->
             <article class="card" data-id="6" data-price="122">
                 <h3>Мицеллярный гель</h3>
-                  <img class="cart6" src="/img/cart6.png" alt="Карточка6">
-                <p>Мицелярнгйы гель подходит для ежедневного применения для области вокруг глаз</p>
-                <p class="card-price">122.00 BYN</p>
+                <img class="cart6" src="./img/cart6.png" alt="Карточка6">
+                <p>Мицелярный гель для ежедневного применения для области вокруг глаз</p>
+                <p class="card-price">122,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">122.00 BYN</span></p>
+                <p>Итого: <span class="card-total">122,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 7 -->
+            <!-- Карточка 7 -->
             <article class="card" data-id="7" data-price="110">
                 <h3>Пенка для умывания</h3>
-                <img class="cart7" src="/img/cart7.png" alt="Карточка7">
+                <img class="cart7" src="./img/cart7.png" alt="Карточка7">
                 <p>Деликатная пенка для лица с плотной нежной текстурой бережно очищает кожу</p>
-                <p class="card-price">110.00 BYN</p>
+                <p class="card-price">110,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">110.00 BYN</span></p>
+                <p>Итого: <span class="card-total">110,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 8 -->
+            <!-- Карточка 8 -->
             <article class="card" data-id="8" data-price="23">
-                <h3>Сыворотка с 3D витамином С</h3>
-                  <img class="cart8" src="/img/cart8.png" alt="Карточка8">
+                <h3>Сыворотка с 3D витамином</h3>
+                <img class="cart8" src="./img/cart8.png" alt="Карточка8">
                 <p>Сыворотка - насыщенный кислородный коктейль, заряжающий кожу энергией и сиянием</p>
-                <p class="card-price">23.00 BYN</p>
+                <p class="card-price">23,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">23.00 BYN</span></p>
+                <p>Итого: <span class="card-total">23,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 9 -->
+            <!-- Карточка 9 -->
             <article class="card" data-id="9" data-price="23">
                 <h3>Суперувлажняющий крем-гель для лица</h3>
-             <img class="cart9" src="/img/cart9.png" alt="Карточка9">
+                <img class="cart9" src="./img/cart9.png" alt="Карточка9">
                 <p>Легкий крем-гель увлажняет кожу, придает ей сияние и мягкость</p>
-                <p class="card-price">23.00 BYN</p>
+                <p class="card-price">23,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">23.00 BYN</span></p>
+                <p>Итого: <span class="card-total">23,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 10 -->
+            <!-- Карточка 10 -->
             <article class="card" data-id="10" data-price="10">
                 <h3>Энзимная пудра</h3>
-               <img class="cart10" src="/img/cart10.png" alt="Карточка10">
+                <img class="cart10" src="./img/cart10.png" alt="Карточка10">
                 <p>Высокоактивная энзимная пудра для лица и тела</p>
-                <p class="card-price">10.00 BYN</p>
+                <p class="card-price">10,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">10.00 BYN</span></p>
+                <p>Итого: <span class="card-total">10,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 11 -->
+            <!-- Карточка 11 -->
             <article class="card" data-id="1" data-price="114">
                 <h3>Лосьон для лица </h3>
-                  <img class="cart11" src="/img/cart11.png" alt="Карточка11">
+                <img class="cart11" src="./img/cart11.png" alt="Карточка11">
                 <p>Лосьон с легкой текстурой помогает улучшить текстуру кожи и сделать ее более эластичной</p>
-                <p class="card-price">114.00 BYN</p>
+                <p class="card-price">114,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">114.00 BYN</span></p>
+                <p>Итого: <span class="card-total">114,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-                   <!-- Карточка 12 -->
+            <!-- Карточка 12 -->
             <article class="card" data-id="12" data-price="155">
                 <h3>Набор для ухода за кожей лица</h3>
-                  <img class="cart12" src="/img/cart12.png" alt="Карточка12">
+                <img class="cart12" src="./img/cart12.png" alt="Карточка12">
                 <p>Идеальный сет для ежедневного ухода за кожей лица</p>
-                <p class="card-price">155.00 BYN</p>
+                <p class="card-price">155,00 BYN</p>
                 <div class="quantity-controls">
                     <button class="quantity-minus" aria-label="Уменьшить количество">-</button>
-                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1" aria-label="Количество">
+                    <input type="number" class="quantity-input" value="1" min="1" max="999" step="1"
+                        aria-label="Количество">
                     <button class="quantity-plus" aria-label="Увеличить количество">+</button>
                 </div>
-                <p>Итого: <span class="card-total">155.00 BYN</span></p>
+                <p>Итого: <span class="card-total">155,00 BYN</span></p>
                 <button class="add-to-cart" aria-label="Добавить в корзину">В корзину</button>
             </article>
-        
-        </section>
-    
-    <aside class="cart" role="complementary" aria-label="Корзина">
-        <h2>Корзина</h2>
-        <div class="cart-empty" aria-live="polite">Корзина пуста</div>
-        <div class="cart-items" aria-live="polite">
-        </div>
-        <div class="cart-summary">
-            <p>Итого: <span class="cart-total">0 BYN</span></p>
-            <button class="cart-clear">Очистить корзину</button>
-        </div>
-    </aside>
-</wrapper>
 
-       <script src="app.js"></script>
+        </section>
+
+        <aside class="cart" role="complementary" aria-label="Корзина">
+            <h2>Корзина</h2>
+            <div class="cart-empty" aria-live="polite">Корзина пуста</div>
+            <div class="cart-items" aria-live="polite">
+            </div>
+            <div class="cart-summary">
+                <p>Итого: <span class="cart-total">0 BYN</span></p>
+                <button class="cart-clear">Очистить корзину</button>
+            </div>
+        </aside>
+    </wrapper>
+
+    <script src="app.js"></script>
 </body>
+
 </html>
